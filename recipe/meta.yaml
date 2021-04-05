@@ -1,5 +1,5 @@
 {% set name = "TimeChart" %}
-{% set version = "1.2.3" %}
+{% set version = "1.2.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/slaclab/{{ name|lower }}/archive/v{{ version }}.tar.gz
-  sha256: 166a6d96110af04f2048573a6cff99f81fd4657c6b334d074e29e1c7ea995b83
+  sha256: 5663aa51884105e56eed5d5f8afa1bb96623aaf859f73487efc4e98d5adf13ac
 
 build:
   noarch: python

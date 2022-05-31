@@ -1,5 +1,5 @@
 {% set name = "TimeChart" %}
-{% set version = "1.2.4" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,27 +7,32 @@ package:
 
 source:
   url: https://github.com/slaclab/{{ name|lower }}/archive/v{{ version }}.tar.gz
-  sha256: 5663aa51884105e56eed5d5f8afa1bb96623aaf859f73487efc4e98d5adf13ac
+  sha256: 321c95374b593ca69a3c862d159e305c2f84b157c2f8cbc97a2862e205f778b9
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - timechart = timechart_launcher.main:main
 
 requirements:
   host:
-    - python >=2.7
+    - python >=3.6
     - pip
   run:
-    - python >=2.7
+    - python >=3.6
     - pydm >=1.6.0
+    - pyqtgraph
+    - qtpy
     - six
 
 test:
   imports:
     - timechart
+  requires:
+    - pytest
+    - pytest-qt
   commands:
     - timechart --help
 
@@ -36,7 +41,7 @@ about:
   license: SLAC Open
   license_family: OTHER
   license_file: LICENSE.md
-  summary: 'Charting Tool based on PyDM'
+  summary: Charting Tool based on PyDM
   description: |
     TimeChart is a Python Qt-based graphing application for control systems.
     It is intended to be the modern, feature-by-feature matching alternative

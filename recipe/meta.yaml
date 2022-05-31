@@ -34,7 +34,7 @@ test:
 about:
   home: https://github.com/slaclab/timechart
   license: SLAC Open
-  license_family: OTHER 
+  license_family: OTHER
   license_file: LICENSE.md
   summary: 'Charting Tool based on PyDM'
   description: |
@@ -46,4 +46,7 @@ about:
 
 extra:
   recipe-maintainers:
-    - jacquelinegarrahan
+    - jbellister-slac
+    - YektaY
+    - zlentz
+    - klauer

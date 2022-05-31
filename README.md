@@ -155,5 +155,5 @@ Feedstock Maintainers
 * [@YektaY](https://github.com/YektaY/)
 * [@jbellister-slac](https://github.com/jbellister-slac/)
 * [@klauer](https://github.com/klauer/)
-* [@zlentz](https://github.com/zlentz/)
+* [@zllentz](https://github.com/zllentz/)
 

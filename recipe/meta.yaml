@@ -51,7 +51,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - jbellister-slac
-    - YektaY
-    - zllentz
-    - klauer
+    - conda-forge/pydm

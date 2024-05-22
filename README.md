@@ -152,8 +152,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@YektaY](https://github.com/YektaY/)
-* [@jbellister-slac](https://github.com/jbellister-slac/)
-* [@klauer](https://github.com/klauer/)
-* [@zllentz](https://github.com/zllentz/)
+* [@conda-forge/pydm](https://github.com/conda-forge/pydm/)
 

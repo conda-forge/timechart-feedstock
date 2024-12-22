@@ -11,17 +11,17 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - timechart = timechart_launcher.main:main
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - pydm >=1.6.0
     - pyqtgraph
     - qtpy
@@ -33,6 +33,7 @@ test:
   requires:
     - pytest
     - pytest-qt
+    - python {{ python_min }}
   commands:
     - timechart --help
 

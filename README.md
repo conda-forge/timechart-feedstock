@@ -152,5 +152,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@conda-forge/pydm](https://github.com/conda-forge/pydm/)
+* [@conda-forge/pydm](https://github.com/orgs/conda-forge/teams/pydm/)
 
